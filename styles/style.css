@@ -9,6 +9,7 @@
     --light-green: #E2EC8D;
     --brown: #4E2916;
     --trans: .125s;
+    --header-trans: .4s;
 }
 
 .main-nav {
@@ -92,17 +93,27 @@ header {
     top:0;
 }
 
-.subheader-1 {
+.subheader.one {
     height: 3.5vh;
-    min-height: 18.75px;
+    /* min-height: 18.75px; */
     background-color: var(--med-green);
 }
 
-.subheader-2 {
+.subheader.two {
     height: 1.75vh;
-    min-height: 9.375px;
+    /* min-height: 9.375px; */
     background-color: var(--light-green);
 }
+
+.subheader {
+    transition: height var(--header-trans);
+}
+
+.subheader.scrolled {
+    height: 0px;
+    transition: height var(--header-trans);
+}
+
 
 main .back {
     position: fixed;
