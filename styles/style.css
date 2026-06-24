@@ -8,8 +8,9 @@
     --med-green: #C2CD86;
     --light-green: #E2EC8D;
     --brown: #4E2916;
+    --link-green: #44be44;
     --trans: .125s;
-    --header-trans: .4s;
+    --long-trans: .4s;
 }
 
 .main-nav {
@@ -107,12 +108,12 @@ header {
 }
 
 .subheader {
-    transition: height var(--header-trans);
+    transition: height var(--long-trans);
 }
 
 .subheader.scrolled {
     height: 0px;
-    transition: height var(--header-trans);
+    transition: height var(--long-trans);
 }
 
 
@@ -147,6 +148,79 @@ main .back {
 .page-stopper {
     width: 100%;
     height: calc(87.75vh + 10px);
+}
+
+.game-showcase {
+    margin: 0px 2vw 0px 2vw;
+    padding: 15px;
+    background-color: RGBA(255, 255, 255, 0.75);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: .5vw;
+    max-height: 475px;
+}
+
+.game-link {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 2vh;
+}
+
+.game-link img {
+    max-width: 100%;
+}
+
+.product-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--link-green);
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 20%;
+    transition: background-color var(--trans), border var(--trans);
+}
+
+.product-link img {
+    max-height: 50%;
+}
+
+.product-link:hover {
+    background-color: white;
+    border: 1vw solid var(--link-green);
+}
+
+.product-link span {
+    display: none;
+    font-family: 'DynaPuff';
+    color: var(--link-green);
+    text-align: center;
+    font-size: 3vw;
+}
+
+.product-link:hover span {
+    display: inline-block;
+    position: absolute;
+}
+
+.product-link:hover img {
+    display: block;
+    visibility: hidden;
+}
+
+.product-link:hover a:after {
+    content: 'test';
+}
+
+.big-showcase {
+    background-color: #d9d9d9;
+    width: 50%;
+}
+.gallery {
+    width: 20%;
 }
 
 @media only screen and (max-width: 650px) {
