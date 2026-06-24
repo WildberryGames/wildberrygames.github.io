@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-green: #A6B36B;
+    --med-green: #C2CD86;
+    --light-green: #E2EC8D;
+    --brown: #4E2916;
+    --trans: .125s;
+}
+
+.main-nav {
+    position: sticky;
+    top:0;
+    background-color: var(--dark-green);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 7vh;
+    min-height: 37.5px;
+}
+
+.main-nav>li>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.header-links {
+    display: flex;
+    align-items: stretch;
+}
+
+.header-links a {
+    display: inline-block;
+    font-family: 'DynaPuff';
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 1vh 1vw 1vh 1vw;
+    transition: background-color var(--trans), transform var(--trans);
+}
+
+.header-links a:hover {
+    background-color: var(--brown);
+    transform: rotate(5deg);
+}
+
+.header-contact li a img {
+    height: 18.75px;
+    opacity: .5;
+    transition: opacity var(--trans);
+}
+
+.header-contact {
+    gap: 7.5px;
+}
+
+.header-contact li a img:hover {
+    opacity: 1;
+}
+
+.main-nav li {
+    list-style-type: none;
+}
+
+.nav-sect {
+    display: flex;
+    align-items: stretch;
+    width: 20%;
+}
+
+.nav-links {
+    width: 80%;
+}
+
+nav {
+    position: sticky;
+    top:0;
+    border-bottom: 10px solid var(--brown);
+    z-index: 10;
+}
+
+header {
+    position: sticky;
+    top:0;
+}
+
+.subheader-1 {
+    height: 3.5vh;
+    min-height: 18.75px;
+    background-color: var(--med-green);
+}
+
+.subheader-2 {
+    height: 1.75vh;
+    min-height: 9.375px;
+    background-color: var(--light-green);
+}
+
+main .back {
+    position: fixed;
+    background: url("../img/home_background.png") no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    z-index:-10;
+}
+
+.logo-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.back img {
+    width: 490px;
+}
+
+.page-stopper {
+    width: 100%;
+    height: calc(87.75vh + 10px);
+}
+
+@media only screen and (max-width: 650px) {
+    .nav-contact {
+        display: none;
+    }
+}
+
