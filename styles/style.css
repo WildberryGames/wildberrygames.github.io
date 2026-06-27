@@ -274,5 +274,8 @@ main .back {
     .nav-contact {
         display: none;
     }
+    .top-link span {
+        display: none;
+    }
 }
 
