@@ -56,14 +56,14 @@
     text-decoration: none;
     font-size: 24px;
     padding: 1vh 1vw 1vh 1vw;
-    border-color: var(--brown);
-    transition: background-color var(--trans), transform var(--trans), color var(--trans), border var(--trans);
+    outline-color: var(--brown);
+    transition: background-color var(--trans), transform var(--trans), color var(--trans), outline var(--trans);
 }
 
 .header-links a:hover {
     background-color: var(--board-brown);
     color: var(--brown);
-    border: 3px solid var(--brown);
+    outline: 3px solid var(--brown);
     transform: rotate(5deg);
 }
 
