@@ -7,6 +7,7 @@
     --dark-green: #A6B36B;
     --med-green: #C2CD86;
     --light-green: #E2EC8D;
+    --board-brown: #c89867;
     --brown: #4E2916;
     --link-green: #44be44;
     --trans: .125s;
@@ -23,7 +24,7 @@
     justify-content: center;
     align-items: stretch;
     height: 7vh;
-    min-height: 37.5px;
+    min-height: 10vh;
 }
 
 .main-nav>li>ul {
@@ -47,11 +48,14 @@
     text-decoration: none;
     font-size: 24px;
     padding: 1vh 1vw 1vh 1vw;
-    transition: background-color var(--trans), transform var(--trans);
+    border-color: var(--brown);
+    transition: background-color var(--trans), transform var(--trans), color var(--trans), border var(--trans);
 }
 
 .header-links a:hover {
-    background-color: var(--brown);
+    background-color: var(--board-brown);
+    color: var(--brown);
+    border: 3px solid var(--brown);
     transform: rotate(5deg);
 }
 
@@ -157,7 +161,7 @@ main .back {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    gap: .5vw;
+    gap: 3vw;
     max-height: 475px;
 }
 
@@ -218,9 +222,30 @@ main .back {
 .big-showcase {
     background-color: #d9d9d9;
     width: 50%;
+    aspect-ratio: 16/9;
 }
 .gallery {
     width: 20%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: .5vw;
+}
+
+.gallery-item {
+    display: block;
+    aspect-ratio: 16/9;
+    background-color: #d9d9d9;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    object-fit: contain;
+
+}
+
+.gallery-item img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 @media only screen and (max-width: 650px) {
