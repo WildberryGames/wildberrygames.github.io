@@ -33,7 +33,18 @@
     transition: height var(--long-trans);
 }
 
+.top-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: .5vw;
+}
 
+.top-link img {
+    max-height: 25%;
+    max-width: 25%;
+}
 
 .main-nav>li>ul {
     display: flex;
@@ -50,7 +61,6 @@
 }
 
 .header-links a {
-    display: inline-block;
     font-family: 'DynaPuff';
     color: white;
     text-decoration: none;
