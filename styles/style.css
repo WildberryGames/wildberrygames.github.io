@@ -42,8 +42,7 @@
 }
 
 .top-link img {
-    max-height: 25%;
-    max-width: 25%;
+    max-height: 29px;
 }
 
 .main-nav>li>ul {
@@ -60,7 +59,7 @@
     align-items: stretch;
 }
 
-.header-links a {
+.top-link {
     font-family: 'DynaPuff';
     color: white;
     text-decoration: none;
@@ -70,14 +69,14 @@
     transition: background-color var(--trans), transform var(--trans), color var(--trans), outline var(--trans);
 }
 
-.header-links a:hover {
+.top-link:hover {
     background-color: var(--board-brown);
     color: var(--brown);
     outline: 3px solid var(--brown);
     transform: rotate(5deg);
 }
 
-.header-links a.scrolled:hover {
+.top-link.scrolled:hover {
     transform: rotate(0deg);
 }
 
@@ -273,6 +272,15 @@ main .back {
 @media only screen and (max-width: 650px) {
     .nav-contact {
         display: none;
+    }
+    .top-link span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .top-link {
+        padding: 1vh 5vw 1vh 5vw;
     }
     .top-link span {
         display: none;
