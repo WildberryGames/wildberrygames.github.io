@@ -290,3 +290,9 @@ main .back {
     }
 }
 
+@media only screen and (max-height: 650px) {
+    .top-link img {
+        max-height: 29px;
+    }
+}
+
