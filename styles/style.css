@@ -176,14 +176,25 @@ main .back {
 }
 
 .game-showcase {
-    margin: 0px 2vw 0px 2vw;
-    padding: 15px;
-    background-color: RGBA(255, 255, 255, 0.75);
+    padding: 20vh 4vw 20vh 4vw;
     display: flex;
     flex-direction: row;
     align-items: stretch;
     gap: 3vw;
     max-height: 475px;
+}
+
+.game-showcase-start {
+    border-top: 35px solid var(--brown);
+}
+
+.game-showcase-end {
+    border-bottom: 35px solid var(--brown);
+    margin-bottom: 10vh;
+}
+
+#BerryBlast {
+    background: url("../img/berry_blast_background.png") no-repeat center center fixed;
 }
 
 .game-link {
@@ -254,7 +265,7 @@ main .back {
 }
 
 .gallery-item {
-    display: block;
+    display: none;
     aspect-ratio: 16/9;
     background-color: #d9d9d9;
     justify-content: center;
