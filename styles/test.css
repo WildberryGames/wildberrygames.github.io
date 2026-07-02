@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-green: #A6B36B;
+    --med-green: #C2CD86;
+    --light-green: #E2EC8D;
+    --board-brown: #c89867;
+    --brown: #4E2916;
+    --link-green: #44be44;
+    --trans: .125s;
+    --long-trans: .4s;
+}
